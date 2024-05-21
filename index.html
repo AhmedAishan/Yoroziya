@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css links -->
+    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="icon" href="favicon.ico" />
+
+    <title>yorozuya</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="row">
+          <div class="discount">
+            <p class="discount__message">
+              Welcome to
+              <span class="discount__message--format">yorozuya</span>
+              👋
+            </p>
+          </div>
+
+          <div class="menu">
+            <h1 class="header__logo-text">Menu</h1>
+            <div class="header__food-list margin-bottom">
+              <ul>
+                <li>
+                  Sushi <span class="header__price">9.99$</span> &rarr;
+                  <button id="btn" class="btn btn__add" data-name="sushi">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Okonomiyaki <span class="header__price">29.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="okonomiyaki">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Miso Soup <span class="header__price">10.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="misoSoup">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Yakitori <span class="header__price">15.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="yakitori">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Udon <span class="header__price">10.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="udon">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Takoyaki <span class="header__price">15.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="takoyaki">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Soba <span class="header__price">59.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="soba">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Sukiyaki <span class="header__price">49.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="sukiyaki">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Ramen <span class="header__price">39.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="ramen">
+                    &plus;add
+                  </button>
+                </li>
+                <li>
+                  Pasta <span class="header__price">35.99$</span>&rarr;
+                  <button id="btn" class="btn btn__add" data-name="pasta">
+                    &plus;add
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="order">
+            <div class="composition">
+              <button class="btn clear-basket">clear basket</button>
+              <div class="composition__items">
+                <!-- <div class="composition__item">
+                  item-01 sushi - 9.99$
+                  <button class="btn btn__minus">&minus;</button>
+                </div> -->
+              </div>
+              <div class="composition__footer">
+                <p class="composition__total">
+                  Your total: <span class="total-value"> </span>
+                </p>
+                <a href="#" class="button-main">confirm order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <div class="bill-background hidden">
+      <div class="bill hidden">
+        <div class="bill__close">X</div>
+
+        <div class="bill__heading">
+          <h2 class="bill__heading__name">yorozuya</h2>
+          <p class="bill__heading__date">date</p>
+        </div>
+
+        <div class="bill__message">
+          <h2 class="bill__message__thankyou">Thanks for ordering</h2>
+          <p>Here's your receipt</p>
+        </div>
+
+        <div class="bill__total">
+          <p>Total</p>
+          <p class="bill__total__amount">0$</p>
+        </div>
+
+        <div class="bill__items">
+          <h2>Items:</h2>
+          <!-- <div class="bill__items__item">
+            <p class="name">tandoori</p>
+            <p class="price">9.99$</p>
+          </div> -->
+        </div>
+
+        <div class="bill__payment">
+          <h2>Payments</h2>
+          <div class="bill__payment__container">
+            <h3>cash</h3>
+            <h3>USD <span class="cash-amount">0</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

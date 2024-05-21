@@ -1,0 +1,9 @@
+{
+  "name": "yoroziya",
+  "version": "1.0.0",
+  "description": "landing page for yoroziya",
+  "main": "script.js",
+  "scripts": {},
+  "author": "Aishan Salam",
+  "license": "ISC"
+}

@@ -1,0 +1,101 @@
+.header {
+  height: 83rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-secondary
+  );
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 4rem rgba($color-black, 0.4);
+
+  &__logo-text {
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  &__food-list {
+    padding-top: 1rem;
+
+    ul {
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+
+    li {
+      cursor: pointer;
+      font-size: 2rem;
+      font-weight: 400;
+      transition: all 0.2s;
+      color: $color-grey-dark;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+}
+
+.composition {
+  position: relative;
+  background-color: $color-bg;
+  height: 70rem;
+  width: 50vw;
+  padding: 5rem 2rem 2rem;
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 70%;
+  }
+
+  &__item {
+    position: relative;
+    color: $color-white;
+    font-size: 2rem;
+    background-color: #101010;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    transition: background-color 0.1s;
+
+    &:hover {
+      background-color: #10101086;
+    }
+  }
+
+  &__footer {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__total {
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: $color-white;
+    font-weight: 500;
+    width: 70%;
+    text-align: center;
+    background-color: $color-black-light;
+  }
+}
